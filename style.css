@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap');
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -16,12 +18,14 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+    font-family: 'pacifico';
+  font-size: 6em;
   animation: fadeIn 2s ease-in-out;
 }
 
 .subtitle {
-  font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+  font-size: 3em;
   margin-bottom: 20px;
 }
 
@@ -29,26 +33,33 @@ button {
   background: #ff4081;
   color: white;
   border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 8px;
+  padding: 20px 40px;
+  font-size: 22px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px #ff4081, 0 0 30px rgba(255, 64, 129, 0.6);
+  animation: buttonGlow 1.5s ease-in-out infinite alternate;
 }
 
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
+  box-shadow: 0 0 25px #ff4081, 0 0 50px rgba(255, 64, 129, 0.9);
 }
 
 .hidden {
   display: none;
 }
 
-video {
+vvideo {
   margin-top: 20px;
-  width: 70%;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  width: 60%;
+  max-width: 600px;
+  border-radius: 20px;
+  border: 6px solid #fff;
+  box-shadow: 0 0 25px rgba(255, 64, 129, 0.7), 0 0 50px rgba(0,0,0,0.5);
+  outline: 3px solid #ff4081;
+  outline-offset: 8px;
 }
 
 .gallery {
@@ -67,6 +78,7 @@ video {
 }
 
 .final-message {
+    font-family: 'Pacifico', cursive;
   margin-top: 30px;
   font-size: 1.8em;
   color: #e91e63;
@@ -81,4 +93,24 @@ video {
 @keyframes glow {
   from { text-shadow: 0 0 10px #ff4081; }
   to { text-shadow: 0 0 20px #ff80ab; }
+}
+
+@keyframes buttonGlow {
+  from { box-shadow: 0 0 10px #ff4081, 0 0 20px rgba(255, 64, 129, 0.5); }
+  to { box-shadow: 0 0 20px #ff4081, 0 0 40px rgba(255, 64, 129, 0.9); }
+}
+
+.side-date {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.3em;
+  font-weight: 700;
+  color: #66e3ff;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  text-shadow: 0 0 10px rgba(255, 224, 102, 0.8);
 }
