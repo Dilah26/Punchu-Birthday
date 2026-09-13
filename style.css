@@ -116,7 +116,7 @@ video {
 .side-date {
   position: fixed;
   left: 100px;
-  top: 50%;
+  top: 65%;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
   font-family: 'Poppins', sans-serif;
