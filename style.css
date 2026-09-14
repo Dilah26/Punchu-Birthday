@@ -34,8 +34,8 @@ button {
   color: white;
   border: none;
   padding: 20px 40px;
-  font-size: 22px;
-  border-radius: 12px;
+  font-size: 24px;
+  border-radius: 15px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 15px #ff4081, 0 0 30px rgba(255, 64, 129, 0.6);
